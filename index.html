@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script
+      src="https://kit.fontawesome.com/2f3a268b27.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/Script/script.js"></script>
+  </head>
+  <!-- This is the home page of the "Elegence Interiors"  -->
+  <body>
+    <!--This is the header part which includes the navigation bar for the page and consists of the hero section -->
+    <header>
+      <img
+        class="logo"
+        src="/homesection/White logo - no background.png"
+        alt="logo"
+      />
+      <nav>
+        <ul class="side_menu">
+          <!-- this is the hamburger menu to close the menu bar present on the low-fidility -->
+          <li class="closeButton" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </li>
+          <li><a href="./homepage.html">Home</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+        </ul>
+        <!-- This is the menu bar of the normal page-->
+        <ul class="nav__links">
+          <li><a class="low_fid" href="./homepage.html">Home</a></li>
+          <li><a class="low_fid" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="low_fid" href="./services.html">Services</a></li>
+          <li><a class="low_fid" href="./aboutUs.html">About Us</a></li>
+          <li><a class="low_fid" href="./contactUs.html">Contact</a></li>
+
+          <li onclick="showMenu()">
+            <a href="#">
+              <i class="fa-solid fa-bars" style="font-size: 20px"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- THis is the hero section consisting the background image and its content-->
+    <div class="hero_text">
+      <h1>Timeless Design Meets<br />Modern Luxury!</h1>
+      <p>
+        Your living area should, in our opinion at Elegance Interiors, represent
+        your own personality and way of life.
+      </p>
+      <a class="hero_text_button" href="./contactUs.html"
+        >Make An Appointment</a
+      >
+    </div>
+
+    <!--This is the midd section of the page consisting the iamges and the discription with the required buttons at -->
+    <div class="middle_section">
+      <div class="mid_section">
+        <h1>Luxurious Urban Retreat</h1>
+        <p>
+          This sophisticated penthouse combines modern design elements with a
+          touch of opulence.We curated a seamless blend of neutral tones,
+          high-end furnishings, and bespoke artwork to create a tranquil urban
+          oasis.
+        </p>
+        <!-- this is a button and it navigates to the other page when clicked upon-->
+        <a href="./portfolio.html" class="buttons"> View More</a>
+      </div>
+
+      <div class="mid_section">
+        <img src="/homesection/redlivingroom.jpg" alt="table data" />
+      </div>
+
+      <div class="mid_section">
+        <h1>
+          Redefine elegance and
+          <br />practicality.
+        </h1>
+        <p>
+          At Elegance Interiors, we provide a wide range of services intended to
+          turn business and residential spaces into enthralling settings that
+          skillfully combine flair and utility.
+        </p>
+        <!-- this is a button and it navigates to the other page when clicked upon-->
+        <a href="./services.html" class="buttons"> View More</a>
+      </div>
+
+      <div class="mid_section">
+        <img src="/homesection/backwallpaer1.jpg" alt="table data" />
+      </div>
+
+      <div class="mid_section">
+        <h1>About Us</h1>
+        <p>
+          We design award-winning environments that uplift, encourage, and
+          enable the workforce. We have learned that no two projects are the
+          same and that workspace functionality and design change depending on
+          the individuals using them. We continuously work to offer a variety of
+          interior design options that may be integrated in different ways to
+          satisfy varied project demands in order to produce an environment that
+          is focused on people.
+        </p>
+        <!-- this is a button and it navigates to the other page when clicked upon-->
+        <a href="./AboutUs.html" class="buttons"> View More</a>
+      </div>
+
+      <div class="mid_section">
+        <img src="/homesection/backwallpaper3.jpg" alt="table data" />
+      </div>
+    </div>
+
+    <div class="lower_mid">
+      <h1>
+        What's Your<br />
+        Next Project ?
+      </h1>
+      <p>
+        Every great design starts with a conversation.<br />
+        Share your vision with us.
+      </p>
+      <!-- this is a button and it navigates to the other page when clicked upon-->
+      <a class="lower_mid_button" href="./contactUs.html">Contact Us</a>
+    </div>
+
+    <!-- this is the footer section of the page which has been divided into three parts  -->
+    <footer>
+      <ul class="nav__footer">
+        <li></li>
+        <li>Address</li>
+        <li>Time Square,New York</li>
+        <br />
+        <li>Contact:</li>
+        <li>1800 123 4567</li>
+        <li>eleganceinterior@gmail.com</li>
+
+        <p>
+          <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </p>
+      </ul>
+      <!-- this is the logo of the footer -->
+      <img
+        class="footer_logo"
+        src="/homesection/White logo - no background.png"
+        alt="logo"
+      />
+      <!-- this is the navigatiion bar same as the the menu bar at the top  -->
+      <ul class="nav__footer2">
+        <li><a href="./homepage.html">Home</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./contactUs.html">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

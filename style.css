@@ -1,0 +1,634 @@
+/*This style file is shared all over the html files and is present in all of the HTML files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff4f4;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+/* This styles the header of the navigation bar */
+header {
+  display: flex; /*Displays flex  */
+  justify-content: space-between; /*Provides space betewwn the content */
+  align-items: center; /* Aligns items in flex to the center*/
+  padding: 6px 50px; /*  Provides padding   */
+  background-color: #42292b;
+  position: sticky; /*  Sticks to the page even ahfter scrolling   */
+  top: 0;
+}
+
+/*  Styles th logo image  */
+.logo {
+  width: 108px;
+  height: 108px;
+  background-color: #42292b;
+}
+
+/* Styling the links of the menu or the navigation bar    */
+.nav__links {
+  list-style: none; /*  No style is done to the list   */
+  background-color: #42292b;
+}
+
+.nav__links li {
+  display: inline-block;
+  font-size: 24px; /*   Provides the font size for the text  */
+  background-color: #42292b;
+  align-items: right; /*   aligns the terxt to the right of the page */
+  padding-right: 20px;
+  margin-right: 20px;
+}
+/* This styles the nav links only when it gets hoverd over    */
+.nav__links li:hover {
+  width: auto;
+  font-size: 24px;
+  background-color: #fff4f486;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.5s ease-out; /*  This is the transition time activates only when hovered ocver the content   */
+}
+
+/*  Styles the anchor tags present inside the links   */
+.nav__links li a {
+  text-decoration: none;
+  color: #fff4f4;
+}
+/*  This styles the hamburger menu for the low fidility   */
+.side_menu {
+  position: fixed; /*  Sets the position to one posiution only   */
+  top: 0; /*  Sets the top edge of the menue to the top edge of the page  */
+  right: 0; /* Setts to the right edge of the page  */
+  width: 250px; /* sets the widsth of th content  */
+  height: 100vh; /* Setes the heoght of the content  */
+  z-index: 999; /* Sets the stack order of the menu  */
+  background-color: #000000cc;
+  backdrop-filter: blur(10px); /*  blurs the background */
+  display: none; /* removes th edisplay and sets it to npne  */
+  flex-direction: column; /* the menu bar ar ein the forms of the column  */
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Styles the list in the side menu bar  */
+.side_menu li {
+  width: 100%;
+  padding-top: 30px;
+  font-weight: 900px;
+}
+
+/* Styles the anchor tags in the side menu */
+.side_menu a {
+  width: 100px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styles the close button  */
+.closeButton {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*Styles the hamburger button   */
+.nav__links .fa-bars {
+  display: none; /* Sets the display to none making it empty  */
+}
+
+/*This is the footer section of the page   */
+.footer_logo {
+  /* Styles the footer logo by adjusting its height and the width  */
+  width: 200px;
+  height: 200px;
+  background-color: #42292b;
+}
+
+body {
+  background: #fff4f4;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+/*  This is the heroi section containing the background image and the text */
+.hero_text {
+  background-image: url(homesection/sunshine-red-and-yellow-sands-the-tango-colour-combination-for-walls.jpg); /* this is the background image */
+  background-size: cover; /*Thsi helps the image tio cover the whole background  */
+  height: 100vh;
+}
+
+/*  This are the styles for the hero texts*/
+.hero_text {
+  padding-top: 95px;
+  padding-left: 100px;
+}
+
+/* THis sare the colors for the text in the heading and the paragraph section */
+.hero_text h1,
+p {
+  color: #fff4f4;
+}
+
+/* Styling the heading */
+.hero_text h1 {
+  letter-spacing: 3px; /* Provides gap between the texts by 3pixels */
+  font-size: 72px; /* Adjusting the fonts */
+  font-weight: 100;
+}
+
+/* Styling the paragraph  */
+.hero_text p {
+  color: #fff4f4;
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Styling the button of the hero section used as an anchor tag */
+.hero_text_button {
+  width: 280px;
+  height: 40px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #42292b;
+  padding: 10px; /* Provides padding from all the sides */
+  border-radius: 5px; /* changes the shape of the border */
+  border: 2px solid;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+/* Styles the buitton when ever it is hovered over it */
+.hero_text_button:hover {
+  width: 280px;
+  height: 50px;
+  padding: 26px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff; /*Color of the text  */
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #332929;
+  text-decoration: none;
+  background-color: #332929;
+}
+/* Styles the overall button used in the page  */
+.buttons {
+  width: 280px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px; /* changes the background shape */
+  border: 2px solid black; /* PRovides a border color */
+  text-decoration: none; /* remopves anytpe of decoration applied to it  */
+  background-color: #332929;
+}
+
+/*Styles the button whenever it is hovered over it   */
+.buttons:hover {
+  width: 280px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: #000000;
+  transition: 0.2s ease-in; /* Creates a transition whernerver it is hovered over it  */
+}
+
+/* The style is for the middle sction of the page  */
+.middle_section {
+  display: flex; /* Displays the conbtent in flex */
+  flex-wrap: wrap; /*  Wraps the flex*/
+  justify-content: center; /* shows the content in the center of the flex  */
+  align-items: center; /*Alligns the contrent to the center   */
+  margin-top: 90px;
+  padding-left: 100px;
+}
+
+/*Styles the image by adding the  */
+.mid_section img {
+  width: 588px;
+  height: 645px;
+  margin-bottom: 120px;
+  border-radius: 20px;
+}
+
+/* Styles the heading and the paragraph of the mid section  */
+.mid_section h1,
+p {
+  width: 579px; /* Sets the width  */
+  color: #332929;
+}
+
+/* Styles the heading of the middle section   */
+.mid_section h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+/* Styles the paragraph of the middle section */
+.mid_section p {
+  font-size: 18px;
+  font-weight: 5;
+  margin-right: 50px;
+  text-align: left; /* Aligns the text to the left side of the start  */
+  margin-bottom: 40px;
+}
+
+/* Styling the button of the middle section  */
+.mid_section button {
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #fff4f4;
+  background-color: #332929;
+  padding: 10px; /*Provides padding from all the sides   */
+}
+
+/* This id for the lower mid section of the page */
+.lower_mid {
+  display: flex; /*Displays the content as flex  */
+  flex-direction: column; /* Dispalys the content in terms of column  */
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Styles the heading of the lower mid sectiuon */
+.lower_mid h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+/* Styles the paragraph of the lower mid section  */
+.lower_mid p {
+  font-size: 18px;
+  margin-left: 490px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+/* Styles the mutton of the lower mid section  */
+.lower_mid_button {
+  width: 180px;
+  height: 25px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 0 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: #332929;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*PRovides style to the content only when it is hovered over   */
+.lower_mid_button:hover {
+  width: 180px;
+  height: 25px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 0 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: #000000;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Styles the footer section  */
+footer {
+  display: flex; /*  Displays the content as flex */
+  justify-content: space-between; /* Provides gap between the divs */
+  align-items: center; /* aligns the items to the center  */
+  background-color: #42292b;
+  padding-top: 50px;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+/* Style sthe other DIV's except the logo  */
+.nav__footer,
+.nav__footer2 {
+  width: 400px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  list-style: none;
+  color: #fff4f4;
+  margin-left: 80px;
+  padding-left: 80px;
+}
+/*Styles the anchor tag present in teh list   */
+.nav__footer2 li a {
+  margin-right: 80px;
+  padding-right: 80px;
+  text-decoration: none;
+  color: #fff4f4;
+  font-size: 16px;
+}
+
+.nav__footer a {
+  letter-spacing: 1px;
+  color: #fff4f4;
+}
+
+/* The styles below are used or the low fidiility styling and is completely based on the above 
+    styles  that we have done the chanages mase in this style are very simple and are reduced
+     like the width , height of the image , font size .   */
+@media (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  p {
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 10px;
+    background-color: #42292b;
+    /*position:sticky;*/
+    top: 0;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav__links {
+    list-style: none;
+    background-color: #42292b;
+  }
+
+  .nav__links li {
+    display: inline-block;
+    font-size: 10px;
+    background-color: #42292b;
+    align-items: right;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+  .nav__links li a {
+    text-decoration: none;
+    color: #fff4f4;
+  }
+  .nav__links .fa-bars {
+    display: contents;
+    font-size: 25px;
+    padding-bottom: 20px;
+    background-color: black;
+  }
+  .nav__links li:hover {
+    width: auto;
+    font-size: 24px;
+    background-color: #42292b;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 1s ease-out;
+  }
+
+  .low_fid {
+    display: none; /* Dispalys the low_fid div ans none and creates a empty space  */
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  p {
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 10px;
+    background-color: #42292b;
+    /*position:sticky;*/
+    top: 0;
+  }
+
+  .hero_text {
+    background-image: url(/homesection/hero\ section\ black\ blur.jpg);
+    background-size: cover;
+    height: 240px;
+    padding-top: 35px;
+    padding-left: 50px;
+  }
+
+  .hero_text h1,
+  p {
+    color: #fff4f4;
+  }
+  .hero_text h1 {
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-weight: 100;
+  }
+  .hero_text p {
+    color: #fff4f4;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .hero_text_button {
+    font-size: 13px;
+    font-weight: 600;
+    color: #42292b;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid;
+    text-decoration: none;
+    background-color: #fff;
+  }
+
+  .hero_text_button:hover {
+    font-size: 13px;
+    font-weight: 600;
+    color: #42292b;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid;
+    text-decoration: none;
+    background-color: #fff;
+  }
+
+  .middle_section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  .mid_section img {
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+
+  .mid_section h1,
+  p {
+    color: #332929;
+    width: 300px;
+  }
+
+  .mid_section h1 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .mid_section p {
+    font-size: 10px;
+    font-weight: 5;
+    text-align: left;
+  }
+
+  .mid_section .buttons {
+    width: 85px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #fff4f4;
+    background-color: #332929;
+    padding: 10px;
+    margin-bottom: 80px;
+    margin-left: 0px;
+  }
+
+  .lower_mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lower_mid h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 52px;
+  }
+
+  .lower_mid p {
+    display: none;
+  }
+
+  .lower_mid_button {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #332929;
+    text-align: center;
+  }
+
+  .lower_mid_button:hover {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #332929;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #42292b;
+    padding-top: 50px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .footer_logo {
+    width: 90px;
+    height: 90px;
+    background-color: #42292b;
+  }
+  .nav__footer {
+    width: 500px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    list-style: none;
+    color: #fff4f4;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  .nav__footer2 {
+    display: none; /*Doesnt dispaly the list of the footer nav bar  */
+  }
+
+  .nav__footer p {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .nav__footer a {
+    width: 20px;
+    font-size: 18px;
+    letter-spacing: 10px;
+    color: #fff4f4;
+  }
+}
