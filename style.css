@@ -631,4 +631,7 @@ footer {
     letter-spacing: 10px;
     color: #fff4f4;
   }
+  p {
+    font-size: 15px;
+  }
 }
