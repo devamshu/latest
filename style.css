@@ -529,7 +529,7 @@ footer {
     font-weight: 900;
   }
   .mid_section p {
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 5;
     text-align: left;
   }
@@ -630,8 +630,5 @@ footer {
     font-size: 18px;
     letter-spacing: 10px;
     color: #fff4f4;
-  }
-  p {
-    font-size: 15px;
   }
 }
